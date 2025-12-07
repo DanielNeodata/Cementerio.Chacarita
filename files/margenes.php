@@ -1,0 +1,100 @@
+{"recibo": 
+    {
+        "paperSize": {"x": "5", "y": "0", "width": "210", "height": "294", "unit": "mm"},
+        "paperSizeCopia": {"x": "5", "y": "148", "width": "205", "height": "148", "unit": "mm"},
+
+        "recuadro1Original": {"x": "4", "y": "28", "width": "125", "height": "30", "unit": "mm"},
+        "recuadro2Original": {"x": "132", "y": "28", "width": "72", "height": "30", "unit": "mm"},
+        "recuadro3Original": {"x": "4", "y": "84", "width": "135", "height": "55", "unit": "mm"},
+        "recuadro4Original": {"x": "142", "y": "84", "width": "62", "height": "42", "unit": "mm"},
+
+        "recuadro1Line1Original": {"x": "20", "y": "40", "width": "90", "height": "15", "unit": "mm"},
+        "recuadro1Line2Original": {"x": "20", "y": "45", "width": "90", "height": "15", "unit": "mm"},
+
+        "recuadro2Line1Original": {"x": "140", "y": "32", "width": "65", "height": "5", "unit": "mm"},
+        "recuadro2Line2Original": {"x": "140", "y": "37", "width": "65", "height": "5", "unit": "mm"},
+        "recuadro2Line3Original": {"x": "162", "y": "48", "width": "65", "height": "5", "unit": "mm"},
+
+        "recuadro3Line1Original": {"x": "10", "y": "91", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line2Original": {"x": "10", "y": "96", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line3Original": {"x": "10", "y": "101", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line4Original": {"x": "10", "y": "106", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line5Original": {"x": "10", "y": "111", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line6Original": {"x": "10", "y": "116", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line7Original": {"x": "10", "y": "121", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line8Original": {"x": "10", "y": "126", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line9Original": {"x": "10", "y": "131", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line10Col1Original": {"x": "30", "y": "136", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line10Col2Original": {"x": "110", "y": "136", "width": "20", "height": "5", "unit": "mm"},                                                                                    
+
+        "recuadro4Line1Col1Original": {"x": "155", "y": "90", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line2Col1Original": {"x": "155", "y": "94", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line3Col1Original": {"x": "155", "y": "98", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line4Col1Original": {"x": "155", "y": "102", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line5Col1Original": {"x": "155", "y": "106", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line6Col1Original": {"x": "155", "y": "110", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line7Col1Original": {"x": "155", "y": "114", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line8Col1Original": {"x": "155", "y": "118", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line9Col1Original": {"x": "155", "y": "122", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line10Col1Original":{"x": "155", "y": "127", "width": "40", "height": "5", "unit": "mm"},                            
+
+        "recuadro4Line1Col2Original": {"x": "190", "y": "90", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line2Col2Original": {"x": "190", "y": "94", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line3Col2Original": {"x": "190", "y": "98", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line4Col2Original": {"x": "190", "y": "102", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line5Col2Original": {"x": "190", "y": "106", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line6Col2Original": {"x": "190", "y": "110", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line7Col2Original": {"x": "190", "y": "114", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line8Col2Original": {"x": "190", "y": "118", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line9Col2Original": {"x": "190", "y": "122", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line10Col2Original":{"x": "190", "y": "127", "width": "18", "height": "5", "unit": "mm"},                            
+
+
+
+        "recuadro1Duplicado": {"x": "4", "y": "177", "width": "125", "height": "30", "unit": "mm"},
+        "recuadro2Duplicado": {"x": "132", "y": "177", "width": "72", "height": "30", "unit": "mm"},
+        "recuadro3Duplicado": {"x": "4", "y": "233", "width": "135", "height": "55", "unit": "mm"},
+        "recuadro4Duplicado": {"x": "142", "y": "233", "width": "62", "height": "42", "unit": "mm"},
+
+        "recuadro1Line1Duplicado": {"x": "20", "y": "213", "width": "90", "height": "15", "unit": "mm"},
+        "recuadro1Line2Duplicado": {"x": "20", "y": "228", "width": "90", "height": "15", "unit": "mm"},
+
+        "recuadro2Line1Duplicado": {"x": "140", "y": "205", "width": "65", "height": "5", "unit": "mm"},
+        "recuadro2Line2Duplicado": {"x": "140", "y": "210", "width": "65", "height": "5", "unit": "mm"},
+        "recuadro2Line3Duplicado": {"x": "162", "y": "221", "width": "65", "height": "5", "unit": "mm"},
+
+        "recuadro3Line1Duplicado": {"x": "10", "y": "264", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line2Duplicado": {"x": "10", "y": "269", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line3Duplicado": {"x": "10", "y": "274", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line4Duplicado": {"x": "10", "y": "279", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line5Duplicado": {"x": "10", "y": "284", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line6Duplicado": {"x": "10", "y": "289", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line7Duplicado": {"x": "10", "y": "294", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line8Duplicado": {"x": "10", "y": "299", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line9Duplicado": {"x": "10", "y": "304", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line10Col1Duplicado": {"x": "30", "y": "309", "width": "120", "height": "5", "unit": "mm"},
+        "recuadro3Line10Col2Duplicado": {"x": "110", "y": "309", "width": "20", "height": "5", "unit": "mm"},                                                                                    
+
+        "recuadro4Line1Col1Duplicado": {"x": "155", "y": "263", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line2Col1Duplicado": {"x": "155", "y": "267", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line3Col1Duplicado": {"x": "155", "y": "271", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line4Col1Duplicado": {"x": "155", "y": "275", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line5Col1Duplicado": {"x": "155", "y": "279", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line6Col1Duplicado": {"x": "155", "y": "283", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line7Col1Duplicado": {"x": "155", "y": "287", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line8Col1Duplicado": {"x": "155", "y": "291", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line9Col1Duplicado": {"x": "155", "y": "295", "width": "40", "height": "5", "unit": "mm"},
+        "recuadro4Line10Col1Duplicado":{"x": "155", "y": "300", "width": "40", "height": "5", "unit": "mm"},                            
+
+        "recuadro4Line1Col2Duplicado": {"x": "190", "y": "263", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line2Col2Duplicado": {"x": "190", "y": "267", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line3Col2Duplicado": {"x": "190", "y": "271", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line4Col2Duplicado": {"x": "190", "y": "275", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line5Col2Duplicado": {"x": "190", "y": "279", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line6Col2Duplicado": {"x": "190", "y": "283", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line7Col2Duplicado": {"x": "190", "y": "287", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line8Col2Duplicado": {"x": "190", "y": "291", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line9Col2Duplicado": {"x": "190", "y": "295", "width": "18", "height": "5", "unit": "mm"},
+        "recuadro4Line10Col2Duplicado": {"x": "190", "y": "300", "width": "18", "height": "5", "unit": "mm"}  
+    }
+}

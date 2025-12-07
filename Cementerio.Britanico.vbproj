@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{78CD0BEA-B002-4096-AEA2-2A9E64A1C9F7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NeodataNet</RootNamespace>
+    <AssemblyName>NeodataNet</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>12.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mobile">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="application\config\appcrypto.key" />
+    <Content Include="application\config\autoload.php" />
+    <Content Include="application\config\config.php" />
+    <Content Include="application\config\constants.php" />
+    <Content Include="application\config\database.php" />
+    <Content Include="application\config\doctypes.php" />
+    <Content Include="application\config\foreign_chars.php" />
+    <Content Include="application\config\hooks.php" />
+    <Content Include="application\config\index.html" />
+    <Content Include="application\config\memcached.php" />
+    <Content Include="application\config\migration.php" />
+    <Content Include="application\config\mimes.php" />
+    <Content Include="application\config\openssl.cnf" />
+    <Content Include="application\config\private_key.pem" />
+    <Content Include="application\config\profiler.php" />
+    <Content Include="application\config\public_key.pem" />
+    <Content Include="application\config\routes.php" />
+    <Content Include="application\config\smileys.php" />
+    <Content Include="application\config\user_agents.php" />
+    <Content Include="application\controllers\AvisoDeDeuda.php" />
+    <Content Include="application\controllers\Backend.php" />
+    <Content Include="application\controllers\index.html" />
+    <Content Include="application\controllers\Prueba.php" />
+    <Content Include="application\controllers\TestMail.php" />
+    <Content Include="application\core\index.html" />
+    <Content Include="application\core\My_Controller.php" />
+    <Content Include="application\core\My_Model.php" />
+    <Content Include="application\helpers\aviso_deuda_helper.php" />
+    <Content Include="application\helpers\barcode_helper.php" />
+    <Content Include="application\helpers\builder_helper.php" />
+    <Content Include="application\helpers\global_helper.php" />
+    <Content Include="application\helpers\index.html" />
+    <Content Include="application\helpers\mod_backend_helper.php" />
+    <Content Include="application\helpers\utility_helper.php" />
+    <Content Include="application\hooks\index.html" />
+    <Content Include="application\language\es-ar\buttons_lang.php" />
+    <Content Include="application\language\es-ar\db_lang.php" />
+    <Content Include="application\language\es-ar\email_lang.php" />
+    <Content Include="application\language\es-ar\errors_lang.php" />
+    <Content Include="application\language\es-ar\fields_lang.php" />
+    <Content Include="application\language\es-ar\index.html" />
+    <Content Include="application\language\es-ar\menu_lang.php" />
+    <Content Include="application\language\es-ar\messages_lang.php" />
+    <Content Include="application\language\es-ar\profiler_lang.php" />
+    <Content Include="application\language\index.html" />
+    <Content Include="application\models\index.html" />
+    <Content Include="application\models\mod_backend\Applications.php" />
+    <Content Include="application\models\mod_backend\Files_attached.php" />
+    <Content Include="application\models\mod_backend\Functions.php" />
+    <Content Include="application\models\mod_backend\Groups.php" />
+    <Content Include="application\models\mod_backend\Log_general.php" />
+    <Content Include="application\models\mod_backend\Messages_attached.php" />
+    <Content Include="application\models\mod_backend\Messages_attached_log.php" />
+    <Content Include="application\models\mod_backend\Rel_groups_functions.php" />
+    <Content Include="application\models\mod_backend\Rel_users_groups.php" />
+    <Content Include="application\models\mod_backend\Type_users.php" />
+    <Content Include="application\models\mod_backend\Users.php" />
+    <Content Include="application\models\mod_britanico\Avisos.php" />
+    <Content Include="application\models\mod_britanico\Cashflow.php" />
+    <Content Include="application\models\mod_britanico\CategoriaIva.php" />
+    <Content Include="application\models\mod_britanico\Cliente.php" />
+    <Content Include="application\models\mod_britanico\Cocheria.php" />
+    <Content Include="application\models\mod_britanico\cocherias.php" />
+    <Content Include="application\models\mod_britanico\Con_cuentas.php" />
+    <Content Include="application\models\mod_britanico\Con_rubros.php" />
+    <Content Include="application\models\mod_britanico\Creditos_debitos_bancarios.php" />
+    <Content Include="application\models\mod_britanico\CuentaCorriente.php" />
+    <Content Include="application\models\mod_britanico\Deposito.php" />
+    <Content Include="application\models\mod_britanico\Estadistica_cobro.php" />
+    <Content Include="application\models\mod_britanico\EstadoCivil.php" />
+    <Content Include="application\models\mod_britanico\Funciones_avanzadas.php" />
+    <Content Include="application\models\mod_britanico\Gestion_cobranza.php" />
+    <Content Include="application\models\mod_britanico\Historico.php" />
+    <Content Include="application\models\mod_britanico\inhumado.php" />
+    <Content Include="application\models\mod_britanico\inhumado_old.php" />
+    <Content Include="application\models\mod_britanico\inhumado_RegistroSepulturas.php" />
+    <Content Include="application\models\mod_britanico\inhumado_SinParcelaAsociada.php" />
+    <Content Include="application\models\mod_britanico\ListaPrecio.php" />
+    <Content Include="application\models\mod_britanico\MovBanco.php" />
+    <Content Include="application\models\mod_britanico\OrdenDePago.php" />
+    <Content Include="application\models\mod_britanico\Pagador.php" />
+    <Content Include="application\models\mod_britanico\Pais.php" />
+    <Content Include="application\models\mod_britanico\PaisCombo.php" />
+    <Content Include="application\models\mod_britanico\Parcela.php" />
+    <Content Include="application\models\mod_britanico\parcelaCombo.php" />
+    <Content Include="application\models\mod_britanico\Proveedor.php" />
+    <Content Include="application\models\mod_britanico\Provincia.php" />
+    <Content Include="application\models\mod_britanico\Recibo.php" />
+    <Content Include="application\models\mod_britanico\Sac_fallecidos.php" />
+    <Content Include="application\models\mod_britanico\Sac_funcavanzadas_asientos.php" />
+    <Content Include="application\models\mod_britanico\Sac_funcavanzadas_asientos_desbalance.php" />
+    <Content Include="application\models\mod_britanico\Sac_MargenesAvisos.php" />
+    <Content Include="application\models\mod_britanico\Sac_MargenesRecibos.php" />
+    <Content Include="application\models\mod_britanico\Sac_modelos_notificaciones.php" />
+    <Content Include="application\models\mod_britanico\SAC_Operaciones.php" />
+    <Content Include="application\models\mod_britanico\TamanioParcela.php" />
+    <Content Include="application\models\mod_britanico\TextosMargenes.php" />
+    <Content Include="application\models\mod_britanico\TipoDocumento.php" />
+    <Content Include="application\models\mod_britanico\TipoParcela.php" />
+    <Content Include="application\models\mod_britanico\TipoServicio.php" />
+    <Content Include="application\models\mod_britanico\Tipo_notas.php" />
+    <Content Include="application\models\mod_britanico\ValorEnCartera.php" />
+    <Content Include="application\models\mod_britanico\vw_Caja_Tesoreria.php" />
+    <Content Include="application\models\mod_britanico\vw_Caja_Tesoreria_Combo.php" />
+    <Content Include="application\models\mod_britanico\vw_Cocheria.php" />
+    <Content Include="application\models\mod_britanico\vw_Cuenta_Bancaria.php" />
+    <Content Include="application\models\mod_britanico\vw_EmpresaSucursal.php" />
+    <Content Include="application\models\mod_britanico\vw_EmpresaSucursal_Combo.php" />
+    <Content Include="application\models\mod_britanico\vw_EstadoCivil.php" />
+    <Content Include="application\models\mod_britanico\vw_PaisCombo.php" />
+    <Content Include="application\models\mod_britanico\vw_parcelaCombo.php" />
+    <Content Include="application\models\mod_britanico\vw_TipoDocumento.php" />
+    <Content Include="application\models\mod_britanico\vw_TipoServicio.php" />
+    <Content Include="application\views\abm.php" />
+    <Content Include="application\views\AvisoDeDeuda\AvisoDeDeuda.php" />
+    <Content Include="application\views\AvisoDeDeuda\AvisoIndividual.php" />
+    <Content Include="application\views\AvisoDeDeuda\barcode.php" />
+    <Content Include="application\views\AvisoDeDeuda\hola.php" />
+    <Content Include="application\views\AvisoDeDeuda\hola2.php" />
+    <Content Include="application\views\brow.php" />
+    <Content Include="application\views\common\_error.php" />
+    <Content Include="application\views\common\_footer.php" />
+    <Content Include="application\views\common\_header.php" />
+    <Content Include="application\views\errors\cli\error_404.php" />
+    <Content Include="application\views\errors\cli\error_db.php" />
+    <Content Include="application\views\errors\cli\error_exception.php" />
+    <Content Include="application\views\errors\cli\error_general.php" />
+    <Content Include="application\views\errors\cli\error_php.php" />
+    <Content Include="application\views\errors\cli\index.html" />
+    <Content Include="application\views\errors\html\error_404.php" />
+    <Content Include="application\views\errors\html\error_db.php" />
+    <Content Include="application\views\errors\html\error_exception.php" />
+    <Content Include="application\views\errors\html\error_general.php" />
+    <Content Include="application\views\errors\html\error_php.php" />
+    <Content Include="application\views\errors\html\index.html" />
+    <Content Include="application\views\errors\index.html" />
+    <Content Include="application\views\excel.php" />
+    <Content Include="application\views\index.html" />
+    <Content Include="application\views\logged.php" />
+    <Content Include="application\views\login.php" />
+    <Content Include="application\views\mod_backend\external\mobile_action.php" />
+    <Content Include="application\views\mod_backend\functions\abm.php" />
+    <Content Include="application\views\mod_backend\groups\abm.php" />
+    <Content Include="application\views\mod_backend\log_general\abm.php" />
+    <Content Include="application\views\mod_backend\masters\abm.php" />
+    <Content Include="application\views\mod_backend\upload\form.js" />
+    <Content Include="application\views\mod_backend\upload\form.php" />
+    <Content Include="application\views\mod_backend\users\abm.php" />
+    <Content Include="application\views\mod_backend\_footer.php" />
+    <Content Include="application\views\mod_backend\_header.php" />
+    <Content Include="application\views\mod_britanico\Avisos\avisos.js" />
+    <Content Include="application\views\mod_britanico\Avisos\avisos.php" />
+    <Content Include="application\views\mod_britanico\Cashflow\Cashflow.js" />
+    <Content Include="application\views\mod_britanico\Cashflow\Cashflow.php" />
+    <Content Include="application\views\mod_britanico\cliente\abm.php" />
+    <Content Include="application\views\mod_britanico\cocherias\abm.php" />
+    <Content Include="application\views\mod_britanico\cocherias\listados.js" />
+    <Content Include="application\views\mod_britanico\cocherias\listados.php" />
+    <Content Include="application\views\mod_britanico\con_cuentas\abm.php" />
+    <Content Include="application\views\mod_britanico\con_cuentas\listados.js" />
+    <Content Include="application\views\mod_britanico\con_cuentas\listados.php" />
+    <Content Include="application\views\mod_britanico\con_cuentas\plan_de_cuentas.js" />
+    <Content Include="application\views\mod_britanico\con_cuentas\plan_de_cuentas.php" />
+    <Content Include="application\views\mod_britanico\con_rubros\abm.php" />
+    <Content Include="application\views\mod_britanico\con_rubros\listados.js" />
+    <Content Include="application\views\mod_britanico\con_rubros\listados.php" />
+    <Content Include="application\views\mod_britanico\Estadistica_cobro\reporteEstadisticaCobro.js" />
+    <Content Include="application\views\mod_britanico\Estadistica_cobro\reporteEstadisticaCobro.php" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\abcm_asientos.js" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\abcm_asientos.php" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\ajuste_inflacion.js" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\ajuste_inflacion.php" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\balance.js" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\balance.php" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\cierre_apertura.js" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\cierre_apertura.php" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\diario.js" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\diario.php" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\mayor.js" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\mayor.php" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\remuneracion.js" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\remuneracion.php" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\revertir_asientos_automaticos.js" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\revertir_asientos_automaticos.php" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\transferencia_resultados.js" />
+    <Content Include="application\views\mod_britanico\funciones_avanzadas\transferencia_resultados.php" />
+    <Content Include="application\views\mod_britanico\Gestion_cobranza\Gestion_cobranza.js" />
+    <Content Include="application\views\mod_britanico\Gestion_cobranza\reporteGestionCobranza.php" />
+    <Content Include="application\views\mod_britanico\inhumado\abm.php" />
+    <Content Include="application\views\mod_britanico\inhumado_sinparcelaasociada\abm.php" />
+    <Content Include="application\views\mod_britanico\inhumado_sinparcelaasociada\sinparcela.js" />
+    <Content Include="application\views\mod_britanico\listaprecio\abm.php" />
+    <Content Include="application\views\mod_britanico\OrdenDePago\abm.js" />
+    <Content Include="application\views\mod_britanico\OrdenDePago\abm.php" />
+    <Content Include="application\views\mod_britanico\OrdenDePago\OrdenDePago.js" />
+    <Content Include="application\views\mod_britanico\pagador\abm.php" />
+    <Content Include="application\views\mod_britanico\parcela\abm.js" />
+    <Content Include="application\views\mod_britanico\parcela\abm.php" />
+    <Content Include="application\views\mod_britanico\parcela\parcelas.js" />
+    <Content Include="application\views\mod_britanico\parcela\parcelas.php" />
+    <Content Include="application\views\mod_britanico\recibo\abm.php" />
+    <Content Include="application\views\mod_britanico\recibo\recibo.js" />
+    <Content Include="application\views\mod_britanico\recibo\recibos.php" />
+    <Content Include="application\views\mod_britanico\Sac_funcavanzadas_asientos\abm.js" />
+    <Content Include="application\views\mod_britanico\Sac_funcavanzadas_asientos\abm.php" />
+    <Content Include="application\views\mod_britanico\Sac_MargenesAvisos\abm.php" />
+    <Content Include="application\views\mod_britanico\Sac_MargenesRecibos\abm.php" />
+    <Content Include="application\views\mod_britanico\sac_modelos_notificaciones\abm.php" />
+    <Content Include="application\views\mod_britanico\TextosMargenes\abm.php" />
+    <Content Include="application\views\mod_britanico\valorencartera\abm.php" />
+    <Content Include="application\views\mod_britanico\valorencartera\cargardepositos.js" />
+    <Content Include="application\views\mod_britanico\valorencartera\cargardepositos.php" />
+    <Content Include="application\views\mod_britanico\valorencartera\deposito.js" />
+    <Content Include="application\views\mod_britanico\valorencartera\deposito.php" />
+    <Content Include="application\views\pdf.php" />
+    <Content Include="application\views\TestMail\prueba.php" />
+    <Content Include="assets\css\britanico.css" />
+    <Content Include="assets\css\croppie.css" />
+    <Content Include="assets\css\material-icons.css" />
+    <Content Include="assets\css\MaterialIcons-Regular.eot" />
+    <Content Include="assets\css\MaterialIcons-Regular.ijmap" />
+    <Content Include="assets\css\MaterialIcons-Regular.svg" />
+    <Content Include="assets\css\MaterialIcons-Regular.ttf" />
+    <Content Include="assets\css\MaterialIcons-Regular.woff" />
+    <Content Include="assets\css\MaterialIcons-Regular.woff2" />
+    <Content Include="assets\css\neotransac.css" />
+    <Content Include="assets\css\website.css" />
+    <Content Include="assets\js\AJAX.js" />
+    <Content Include="assets\js\FUNCTIONS.js" />
+    <Content Include="assets\js\generics.js" />
+    <Content Include="assets\js\TOOLS.js" />
+    <Content Include="assets\js\_INIT_EVENTS.js" />
+    <Content Include="index.php" />
+    <Content Include="_NOTAS.txt" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="application\controllers\clientes\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50481/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

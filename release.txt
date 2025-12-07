@@ -1,0 +1,78 @@
+Notas:
+
+Menu Parcela
+  Pagadores           En el ABM falta:
+                        Transferir Pagador
+                        Ver Historico Pagador
+  Parcela             ?? dbo.coop_Rel_Cliente_Pagador_Insert ?, ?
+                      Se le quito la posibilida de Alta. Solo modificacion.
+                        Opciones diferentes (que despues hay que replicar lo que esta en Todos.):
+                          Listado Todos	. Que hace NUMERAR?
+                          En proceso de desenganche	
+                          Desenganchadas Devolución	
+                          Desenganchadas Abandono	
+                          Desenganchadas viejas Orden parcela	
+                          Estado acta comité	
+                          Análisis de gestión	
+                          Históricas	
+                          Sin detalle
+  Clientes            Pasarlo a SP
+                      Transferir Titularidad
+                      Resumen de Deuda
+                      Planes de Pago
+                      Nuevo Comprobante
+                      Ventanas:
+                        Sin cons. a vencer (ABM o reporte?)
+                        Sin arr. a vencer  (ABM o reporte?)
+                        Cocherias          (ABM o reporte?)
+                      Otros :
+                          Libro Todos,     (Reporte). Ya visible. Podria copiarme de Con_cuentas -> vista listados para dejarlo como una lista totalmente plana.
+                          Libro Pares,     (Reporte para imprimir en hojas pares, la mitad de columnas)
+                          Libros Impares.  (Reporte para imprimir en hojas pares, la mitad de columnas) 
+Menu Fallecidos
+  ABCM               Marca de No Innovar 
+                     Esta el de todos
+                     Sin Parcela asociada. 
+                     Falta Registro de Sepulturas (N) --> Sin posibilidad de ABM
+Menu Facturacion
+  00.Cash Flow		se pasa igual y luego cambia	cashflw cambia a reporte de ingresos/egresos
+  000. AVISOS en PDF - Nuevo!			
+  01. Recibos	Descricion debajo **. Requiere charla.	sin moneda extrangera. Todo en epsos y descipcion de que fueron dolares para poder buscar. Saber los que fieron dolares pero en realidad el recibo dice pesos. Monto nominal no contacble los pesos y libras	
+  07. Ordenes de pago internas		igual	
+  *09. Lista de Precios		ok (no se implemento el delete)
+  21. Depósitos bancarios		Aparece el menu con el brow (OjO ). Faltan ver los reportes asociados. Aparece clase Deposito apuntando a m_depositos_bancarios (2098) relacionada con vw_Salida_cheques, cuando por la tabla funciones hubiera correspondido que sea m_movbanco (1065) relacionado con tabla y clase MovBanco
+                            Depositos / Valores en Cartera. Ver si es necesario tener lo de Caja/Tesoreria.
+  04. Cartas Informativas	      	      *quitar*	
+  20. Movimientos de cuenta corriente	  *quitar*		
+  23. Proveedores	                      *quitar*
+  24. Créditos y débitos bancos	        *quitar*	
+  25.Gestión de cobranza	A redisenar cuando termina migracion	pasar lo que esta y luego redefinir	dehar para lo ultimo
+  26. Estadísticas de cobro	A redisenar cuando termina migracion	pasar lo que esta y luego redefinir	dehjar para lo ultmo  
+Menu Rubros
+  1. ABCM           *quitar*
+  2. Listados       *quitar*
+Menu Cuentas
+  ABCM Cuentas       Falta?
+  Listado            Migrado tal cual
+  Plan de Cuentas    Migrado tal cual
+Menu Funciones Avanzadas
+  10.Cocherías                
+  3. Cierre y Apertura      -> Queda, pero ver con Dani
+  6. ABMC - Asientos
+  7. Libro diario
+  8. Libro Mayor
+  9. Balance de Sumas y Saldos
+
+  1. Ajuste por Inflación      *quitar*
+  2. Transf. de Resultados     *quitar*
+  4. Revertir Asientos Autom.  *quitar*
+  5. Renumeración              *quitar*
+  Tareas a realizar            *quitar*
+
+Menu Historico -> Quitar todo!
+  1. Rubros                     *quitar*
+  2. Cuentas                    *quitar*
+  3. Plan de Cuentas            *quitar*
+  4. Libro Diario               *quitar*
+  5. Mayor de las Cuentas       *quitar*
+  6. Balance de Sumas y Saldos  *quitar*
