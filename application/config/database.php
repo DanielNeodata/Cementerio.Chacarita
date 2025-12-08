@@ -75,7 +75,7 @@ $query_builder = true;
 
 $db['neo_britanico'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => 'DESARROLLO\SQLEXPRESS',
 	'username' => 'sa',
 	'database' => 'neo_britanico',
 	'password' => '08Z5il37',
@@ -96,7 +96,7 @@ $db['neo_britanico'] = array(
 
 $db['neo_nogues'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => 'DESARROLLO\SQLEXPRESS',
 	'username' => 'sa',
 	'database' => 'neo_nogues',
 	'password' => '08Z5il37',
