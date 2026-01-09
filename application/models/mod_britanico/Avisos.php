@@ -13,13 +13,11 @@ class Avisos extends MY_Model {
     {
         try {
             $sql = "SELECT * FROM neo_britanico.dbo.CodigosPagoFacil WHERE barcode='".$values["code"]."'";
-            $tot = $this->execAdHocAsArray($sql);
-            if (count($tot) == 0) {
+            $tot = $this->getRecordsAdHoc($sql);
+            if ($tot==null){
                 $sql = "SELECT * FROM neo_nogues.dbo.CodigosPagoFacil WHERE barcode='" . $values["code"] . "'";
-                $tot = $this->execAdHocAsArray($sql);
-                if (count($tot) == 0) {
-                    throw new Exception('No se ha encontrado el código de barras asociado a una deuda', 401);
-                }
+                $tot = $this->getRecordsAdHoc($sql);
+                if ($tot==null){throw new Exception('No se ha encontrado el código de barras asociado a una deuda', 401);}
             }
             $tot[0]["item_id"] = (string) $tot[0]["item_id"];
             return $tot[0];
