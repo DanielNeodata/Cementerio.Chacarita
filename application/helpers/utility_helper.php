@@ -83,7 +83,7 @@ function DigitosVerificadoresPagoFacil($code) : string {
 function generateCodigoPagofacil(string $numero_pagador, string $valor, string $anio, string $days) : string {
     $a = "";
     $strbarcode = "";
-
+    if (strlen($valor)>8){$valor='99999900';}
     $strbarcode = "1434"; // fijo! pagos PyMe
     $strbarcode .= str_pad( str_replace(".", "", str_replace(",", "", $valor)), 8, "0", STR_PAD_LEFT); // "00000000" importe en centavos
     $strbarcode .= substr($anio, 2, 2) . str_pad($days, 3, "0", STR_PAD_LEFT); // AADDD fecha 1º vence
@@ -96,6 +96,7 @@ function generateCodigoPagofacil(string $numero_pagador, string $valor, string $
 
     $codigoPagoFacil = DigitosVerificadoresPagoFacil($strbarcode);
     $code= ($a . $codigoPagoFacil);
+    if (strlen($code)<42){$code = str_pad($code, 42, "0", STR_PAD_LEFT);}
     return $code;
 }
 
